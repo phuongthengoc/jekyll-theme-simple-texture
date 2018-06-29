@@ -9,13 +9,12 @@
           </a>
         </div>
         <div class="col-md-2 col-xs-2 flag_vi_en">
-          {% if site.lang == "vi" %}
-            {% capture link1 %}{{ site.baseurl_root }}en{{ page.url}}{% endcapture %}
-            <a href="{{ link1 }}" ><img src="src/icon/lang-en.svg"></a>
-          {% elsif site.lang == "en" %}
-            {% capture link2 %}{{ site.baseurl_root }}{{ page.url  }}{% endcapture %}
-            <a href="{{ link2 }}" ><img src="src/icon/lang-vi.svg"></a>
-          {% endif %}
+          <a href="">
+            <img src="src/icon/lang-vi.svg">
+          </a>
+          <a href="">
+            <img src="src/icon/lang-en.svg">
+          </a>
         </div>
       </div>
     </div>
@@ -28,19 +27,19 @@
             <div class="">
               <ul id="" class="menu_main">
                 <li id="" class="menu-item">
-                  <a href="#">{% t menu.home_page %}</a>
+                  <a href="#">Trang Chủ</a>
                 </li>
                 <li id="" class="menu-item">
-                  <a href="#">{% t menu.introduce %}</a>
+                  <a href="#">Giới thiệu</a>
                 </li>
                 <li id="" class="menu-item">
-                  <a href="#">{% t menu.room_system %}</a>
+                  <a href="#">Hệ thống phòng</a>
                 </li>
                 <li id="" class="menu-item">
-                  <a href="#">{% t menu.service %}</a>
+                  <a href="#">Dịch vụ</a>
                 </li>
                 <li id="" class="menu-item">
-                  <a href="#">{% t menu.contact %}</a>
+                  <a href="#">Liên hệ</a>
                 </li>
               </ul>
             </div>

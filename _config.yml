@@ -1,4 +1,0 @@
-baseurl: ""
-
-languages: ["vi","en"]
-exclude_from_localizations: ["javascript", "images", "css"]

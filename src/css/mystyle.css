@@ -1,0 +1,1074 @@
+/*
+Theme Name: Twenty Seventeen
+Theme URI: https://wordpress.org/themes/twentyseventeen/
+Author: the WordPress team
+Author URI: https://wordpress.org/
+Description: Twenty Seventeen brings your site to life with header video and immersive featured images. With a focus on business sites, it features multiple sections on the front page as well as widgets, navigation and social menus, a logo, and more. Personalize its asymmetrical grid with a custom color scheme and showcase your multimedia content with post formats. Our default theme for 2017 works great in many languages, for any abilities, and on any device.
+Version: 1.3
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: twentyseventeen
+Tags: one-column, two-columns, right-sidebar, flexible-header, accessibility-ready, custom-colors, custom-header, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, post-formats, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+    font-family: 'robotoregular';
+    src: url('../fonts/glyphicons-halflings-regular.woff2') format('woff2'),
+         url('../fonts/glyphicons-halflings-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'robotomedium';
+    src: url('../fonts/glyphicons-halflings-regular.woff2') format('woff2'),
+         url('../fonts/glyphicons-halflings-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* col-lg */
+/* col-md */
+@media screen and (min-width: 992px){
+  .menu_bar .menu ul li a {
+    font-size: 14px;
+  }
+
+  #btn-book{
+    font-size: 20px;
+  }
+
+  .img-vip{
+    height: 490px !important;
+    width: auto !important;
+    background-image: url("../img/vip-md.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}
+
+/* col-sm */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .menu_bar .menu ul li a {
+    font-size: 11px;
+  }
+  
+  #btn-book{
+    font-size: 17px;
+  }
+
+  .img-vip{
+    height: 490px !important;
+    width: auto !important;
+    background-image: url("../img/vip-xs.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+/* col-xs */
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  .menu_bar .menu ul li a {
+    font-size: 8px;
+  }
+  
+  #btn-book{
+    font-size: 14px;
+  }
+
+  .col-btn-book{
+    padding-left: 25% !important;
+    padding-right: 25% !important;
+  }
+
+  .img-vip{
+    height: 270px !important;
+    width: auto !important;
+    background-image: url("../img/vip-xs.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.form-control, .input-group-addon {
+  border: none !important;
+}
+
+.booking_form{
+  background: transparent !important;
+  /* height: 210px; */
+  margin: 0 auto;
+  max-width: 100%;
+  overflow: hidden;
+  border: 1px #f8945566 solid;
+  text-align: center;
+  padding: 35px 20px 20px 20px;
+  margin: 15px 0px 15px 0px;
+}
+
+input{
+  text-align: center;
+}
+
+.booking_form p{
+  color: #999;
+}
+
+.text-red{
+  color: red;
+}
+
+.form-control, .input-group-addon, .btn{
+  border-radius: 0px !important;
+  width: 100%;
+}
+
+.carousel-control.left, .carousel-control.right{
+  background-image:none !important;
+}
+
+.gioithieu_area ul {
+  list-style: none;
+  margin-left: 1em;
+  padding-left: 0;
+}
+
+.gioithieu_area li {
+  padding-left: 1em;
+  text-indent: -1em;
+}
+
+.gioithieu_area li:before {
+  content: "-";
+  padding-right: 5px;
+}
+
+/*body {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}*/
+
+/* .container {
+    width: 1200px;
+    margin: 0 auto;
+} */
+
+.top_bar {
+    width: 100%;
+    height: 134px;
+    margin: 0 auto;
+    background-image: url("../img/bg_top_bar.jpg");
+    background-color: #fcfcfc;
+    /*background-repeat: no-repeat;*/
+    background-position: center; 
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.top_bar .nothing {
+  overflow: hidden;
+}
+
+.top_bar .logo_top {
+  overflow: hidden;
+  text-align: center;
+  padding: 10px 0px;
+}
+
+.top_bar .flag_vi_en {
+  overflow: hidden;
+  padding: 20px 0px;
+}
+
+.top_bar .flag_vi_en img{
+  width: 28px;
+  height: 20px;
+}
+
+.menu_bar .menu .menu_main {
+  width: 100%;
+}
+
+.menu_bar .menu{
+    overflow: hidden;
+}
+
+.menu_bar .menu ul{
+    padding: 0px !important;
+    padding: 0px !important;
+    list-style: none;
+    float: left;
+    display: inline-flex;
+    margin: 0 auto;
+}
+
+
+.menu_bar .menu ul li{
+  padding: 0px;
+  width: 20%;
+  float: left;
+  text-align: center;
+}
+
+.menu_bar .menu ul li:nth-child(3){
+  padding: 0px;
+  width: 25%;
+  float: left;
+  text-align: center;
+}
+
+
+.menu_bar .menu ul li ul{
+    display:none;
+}
+
+.menu_bar .menu ul li ul li{
+    background:none;
+}
+
+ /*FIX Johnny
+.menu_bar .menu ul li ul li:hover{
+    background:none;
+}
+.menu_bar .menu ul li:hover{
+  display:block;
+  background: #4298ca;
+}
+
+
+li.menu-item-has-children:hover > ul{
+  display: block;
+  position: absolute !important;
+  z-index: 999999;
+  background:#fff;
+  position: absolute;
+  adding: 5px; 
+  list-style: none;
+  background-color: #0E8243 !important;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0,0,0,0.2);
+  -moz-border-radius: 6px;
+  -webkit-box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+  text-align: left;
+}
+li>ul>li.menu-item-has-children:hover > ul{
+  display: block;
+  margin-left: 100%;    
+  margin-top: -30px;
+  position: absolute;
+  overflow: hidden;
+  width: 170px !important;
+}*/
+
+
+ul >li >ul>li{
+  background: #fff;
+  padding: 8px 0px;
+  overflow: hidden;
+}
+
+ul >li >ul>li:hover{
+  background: #f1efe9;
+}
+
+ul >li >ul>li>a{
+  padding: 10px 10px;
+  clear: both;
+  font-weight: bold;
+  line-height: 20px;
+  color: #333;
+  white-space: nowrap;
+  font-size: 12px !important;
+}
+
+.menu_bar {
+  background: #007cc3;
+  width: 100%;
+  /*min-height: 58px;*/
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 4px 0px;
+}
+
+
+.menu_bar .menu ul li a:hover{
+    color: #fff !important;
+}
+
+.menu_bar .menu ul li a{
+  color: white !important;
+  padding: 0px !important;
+  text-transform: uppercase !important;
+  font-family: sans-serif;
+  text-decoration: none;
+  font-weight: bold;
+}
+.menu_bar .menu ul li a:active {
+  background: red;
+}
+
+.menu_bar .menu ul li:nth-child(8) a{
+    border-right: 0px solid white;
+}
+
+.menu_bar .menu ul li:nth-child(1){
+    border-left: none;
+}
+
+.menu_bar .menu .form_search_header {
+  display: inline-block;
+  padding: 6px 5px 0px 5px;
+  width: 100%;
+  text-align: right;
+}
+
+.menu_bar .menu .form_search_header form{
+  display: inline-block;
+  width: 100%;
+}
+
+.menu_bar .menu .form_search_header form input[type="image"]{
+  display: inline-block;
+  float: left;
+  height: 34px;
+  border: 0px;
+  width: 18%;
+}
+
+.menu_bar .menu .form_search_header form input[type="text"] {
+    display: inline-block;
+    float: left;
+    height: 34px;
+    border: 0px;
+    -webkit-border-radius: 0 5px 5px 0;
+    border-radius: 0 5px 5px 0;
+    width: 81%;
+}
+
+.banner_main {
+  width: 100%;
+  margin: 0 auto;
+  height: auto;
+  background: #fff;
+  padding: 5px 0px;
+  overflow: hidden;
+}
+
+.banner_main .banner_main_images{
+  width: 100%;
+  margin: 0 auto;
+  height: auto;
+  overflow: hidden;
+}
+
+.content_homepage  .booking_area {
+  width: 100%;
+  overflow: hidden;
+  /*position: absolute;
+  z-index: 9;
+  left: 10%;
+  top: 760px;*/
+  padding: 10px 0px;
+}
+
+.content_homepage  .booking_area .booking_form{
+  background: transparent !important;
+  /*height: 210px;*/
+  margin: 0 auto;
+  max-width: 1000px;
+  overflow: hidden;
+  border: 1px #f8945566 solid;
+  text-align: center;
+  padding: 10px 20px;
+}
+
+.content_homepage .booking_area .booking_form .title_page h1 {
+  font-size: 24px;
+}
+.content_pages {
+  margin: 0 auto;
+  width: 100%;
+  /*height: 1800px;*/
+  overflow: hidden;
+  background-image: url("../img/bg_main.jpg");
+  background-color: #fcfcfc;
+  background-repeat: no-repeat;
+  background-position: center top; 
+  background-size: cover; 
+  background-position: center;
+}
+
+.content_pages .content_page_gioithieu {
+  overflow: hidden;
+}
+
+.content_pages .content_page_gioithieu h1{
+  overflow: hidden;
+  font-size: 24px;
+}
+
+.content_pages .content_page_gioithieu .title_page{
+  overflow: hidden;
+} 
+
+.content_pages .content_page_gioithieu .hinh_daidien{
+  overflow: hidden;
+} 
+
+.content_pages .content_page_gioithieu .hinh_daidien img{
+  width: 100%;
+  height: auto;
+} 
+
+.content_pages .content_page_gioithieu .mota_hethong{
+  overflow: hidden;
+}
+
+
+.content_pages .title_page {
+  overflow: hidden;
+  font-size: 20px;
+  color: green;
+  text-align: left;
+}
+
+.content_pages .title_page h1{
+  font-size: 30px;
+  padding: 20px 0px;
+}
+
+.content_pages .hinh_daidien {
+  overflow: hidden;
+}
+
+.content_homepage {
+  margin: 0 auto;
+  width: 100%;
+  /*height: 1848px;*/
+  overflow: hidden;
+  background-image: url("../img/bg_main.jpg");
+  background-color: #fcfcfc;
+  background-repeat: no-repeat;
+  background-position: center top; 
+  background-size: cover; 
+  background-position: center;
+}
+
+.content_homepage .gioithieu_area {
+  padding-top: 10px;
+  overflow: hidden;
+}
+
+.content_homepage .gioithieu_area h2{
+  text-align: center;
+}
+
+.content_homepage .gioithieu_area h6{
+  text-align: center;
+  font-family: inherit;
+}
+
+
+
+.content_homepage .gioithieu_area .hinh_anh_hethong {
+  overflow: hidden;
+  
+}
+
+.content_homepage .gioithieu_area .hinh_anh_hethong .gioithieu_trangchu img{
+  width: 100%;
+  height: auto;
+}
+
+.content_homepage .gioithieu_area .mota_hethong {
+  overflow: hidden;
+  font-family: initial;
+  font-size: 17px;
+}
+
+.content_homepage .gioithieu_area .mota_hethong p{
+  margin-bottom: 2px !important;
+
+}
+
+
+.content_homepage .hethongphong_area {
+  padding-top: 0px;
+
+}
+
+.content_homepage .hethongphong_area h2{
+  text-align: center;
+}
+
+.content_homepage .hethongphong_area h6{
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 20px;
+}
+
+.content_homepage .hethongphong_area .room_items {
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.content_homepage .hethongphong_area .room_items .img_room_items {
+  overflow: hidden;
+}
+
+.content_homepage .hethongphong_area .room_items .img_room_items img {
+  width: 100%;
+  height: auto;
+}
+
+.content_homepage .hethongphong_area .room_items .info_room_items {
+  background: rgba(0,0,0,0.5);
+  position: absolute;
+  /*position: fixed;*/
+  bottom: 0px;
+  /*top: 100px;*/
+  width: 100%;
+  padding: 0px 10px;
+}
+
+.content_homepage .hethongphong_area .room_items .info_room_items h3 a{
+  font-size: 22px;
+  color: #fff;
+}
+
+.content_homepage .hethongphong_area .room_items .info_room_items p{
+  overflow: hidden;
+  /*font-size: 18px;
+  color: #fff;*/
+}
+
+.content_homepage .hethongphong_area .room_items .info_room_items p span{
+  font-size: 14px;
+  color: #fff;
+  text-align: left;
+}
+
+.content_homepage .hethongphong_area .room_items .info_room_items p button{
+  padding: 5px 10px;
+  background: #f31131;
+  border-radius: 4px;
+  color: #fff;
+  text-align: right;
+  float: right;
+  border: 0px;
+}
+
+.content_homepage .hethongphong_area .room_items .info_room_items p button:hover{
+  background: #cc001c;
+}
+
+.content_homepage .hethongphong_area .room_items .info_room_items p button a{
+  font-size: 16px;
+  color: #fff;
+}
+
+/*room_items_noibat*/
+
+.content_homepage .hethongphong_area .room_items_noibat {
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 30px;
+  height: 493px;
+}
+
+.content_homepage .hethongphong_area .room_items_noibat .img_room_items_noibat {
+  overflow: hidden;
+}
+
+.content_homepage .hethongphong_area .room_items_noibat .img_room_items_noibat img {
+  width: 100%;
+  height: auto;
+}
+
+.content_homepage .hethongphong_area .room_items_noibat .info_room_items_noibat {
+  background: rgba(0,0,0,0.5);
+  position: absolute;
+  /*position: fixed;*/
+  bottom: 0px;
+  /*top: 100px;*/
+  width: 100%;
+  padding: 0px 10px;
+}
+
+.content_homepage .hethongphong_area .room_items_noibat .info_room_items_noibat h3 a{
+  font-size: 22px;
+  color: #fff;
+}
+
+.content_homepage .hethongphong_area .room_items_noibat .info_room_items_noibat p{
+  overflow: hidden;
+  /*font-size: 18px;
+  color: #fff;*/
+}
+
+.content_homepage .hethongphong_area .room_items_noibat .info_room_items_noibat p span{
+  font-size: 14px;
+  color: #fff;
+  text-align: left;
+}
+
+.content_homepage .hethongphong_area .room_items_noibat .info_room_items_noibat p button{
+  padding: 5px 10px;
+  background: #f31131;
+  border-radius: 4px;
+  color: #fff;
+  text-align: right;
+  float: right;
+  border: 0px;
+}
+
+.content_homepage .hethongphong_area .room_items_noibat .info_room_items_noibat p button:hover{
+  background: #534fef;
+  
+}
+
+.content_homepage .hethongphong_area .room_items_noibat .info_room_items_noibat p button a{
+  font-size: 16px;
+  color: #fff;
+}
+
+/*--------------------------------------------------------------------------------------*/
+
+.content_pages .hethongphong_area {
+  /*padding-top: 80px;*/
+
+}
+.content_pages .hinh_daidien_pages {
+  overflow: hidden;
+}
+
+.content_pages .noidung_pages {
+  overflow: hidden;
+}
+
+.content_pages .hethongphong_area .phongkhachsan {
+  /* padding-top: 80px; */
+  background: #ffffff8a;
+  overflow: hidden;
+  padding: 10px;
+  margin: 10px 0px;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+}
+
+
+.content_pages .hethongphong_area h2{
+  text-align: center;
+}
+
+.content_pages .hethongphong_area h3{
+  text-align: center;
+  font-size: 18px;
+}
+
+.content_pages .hethongphong_area h6{
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 20px;
+}
+
+.content_pages .hethongphong_area .room_items {
+  overflow: hidden;
+  position: relative;
+  /*margin-bottom: 30px;*/
+}
+
+.content_pages .hethongphong_area .room_items .img_room_items {
+  overflow: hidden;
+}
+
+.content_pages .hethongphong_area .room_items .img_room_items img {
+  width: 100%;
+  height: auto;
+}
+
+.content_pages .hethongphong_area .room_items .info_room_items {
+  background: rgba(0,0,0,0.5);
+  position: absolute;
+  /*position: fixed;*/
+  bottom: 0px;
+  /*top: 100px;*/
+  width: 100%;
+  padding: 0px 10px;
+}
+
+.content_pages .hethongphong_area .room_items .info_room_items h3 a{
+  font-size: 22px;
+  color: #fff;
+}
+
+.content_pages .phongkhachsan .info_room_items h3 {
+  font-size: 22px;
+  text-align: left;
+}
+
+.content_pages .hethongphong_area .info_room_items p{
+  overflow: hidden;
+  /*background: #ffff00;*/
+  /*font-size: 18px;
+  color: #fff;*/
+  margin: 0px;
+}
+
+.content_pages .hethongphong_area .info_room_items h4{
+  overflow: hidden;
+  /*background: #ffff00;*/
+  /*font-size: 18px;
+  color: #fff;*/
+  margin: 5px 0px;
+}
+
+
+.content_pages .hethongphong_area .info_room_items h4 span{
+  color: #fff;
+  text-align: left;
+  background: #008aff;
+  padding: 10px;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 34px;
+}
+
+.content_pages .hethongphong_area .info_room_items h4 span.show_gia{
+  padding: 0px 10px;
+  background: #008aff;
+  /* border-radius: 4px; */
+  color: #fff;
+  text-align: right;
+  float: left;
+  border: 0px;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+
+.content_pages .hethongphong_area .info_room_items h4 span.dat_ngay{
+  padding: 0px 10px;
+  background: #f31131;
+  /* border-radius: 4px; */
+  color: #fff;
+  text-align: right;
+  float: right;
+  border: 0px;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.content_pages .hethongphong_area .info_room_items h4 span.dat_ngay a{
+  color: #fff;
+}
+
+
+.content_pages .hethongphong_area .info_room_items h4 button:hover{
+  background: #534fef;
+  
+}
+
+.content_pages .hethongphong_area .info_room_items h4 button a{
+  font-size: 16px;
+  color: #fff;
+}
+
+/*-------------------------------------------------------------------------------------------------------*/
+
+.footer_area {
+  margin: 0 auto;
+  width: 100%;
+  /*height: 1048px;*/
+  padding-top: 50px;
+  overflow: hidden;
+  background-image: url("../img/bg_footer.jpg");
+  background-color: #fcfcfc;
+  background-repeat: no-repeat;
+  background-position: center top; 
+}
+
+.footer_area .footer_left {
+
+}
+
+.footer_area .footer_left .dt_ban a{
+  font-size: 22px;
+  color: #000;
+}
+
+.footer_area .footer_left .dd_01 a{
+  font-size: 22px;
+  color: #000;
+}
+
+.footer_area .footer_left .dd_02 a{
+  font-size: 22px;
+  color: #000;
+}
+
+
+.footer_area .footer_left .material-icons{
+  font-size: 20px;
+  color: #3399cc;
+} 
+
+.footer_area .footer_right{
+  font-size: 16px;
+}
+
+.footer_area .footer_right .material-icons{
+  font-size: 20px;
+  color: #3399cc;
+}
+
+.footer_area .name_footer{
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.footer_area .diachi_footer {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.line_footer {
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: center top; 
+}
+.copyright {
+  text-align: center;
+  font-family: robotoregular;
+  margin: 0 auto;
+}
+
+
+/*Form đặt phòng trực tuyến*/
+
+.rmagic .rmrow .rminput input[type="text"], .rmagic .rmrow .rminput input[type="password"], .rmagic .rmrow .rminput input[type="email"], .rmagic .rmrow .rminput input[type="url"], .rmagic .rmrow .rminput input[type="number"], .rmagic .rmrow .rminput textarea {
+    /*width: 100%;
+    min-height: 36px;
+    font-size: 1em;*/
+    border: 1px #dccccc solid;
+    box-shadow: none;
+    padding: 4px;
+}
+
+.rmagic.rm_theme_classic form.rmagic-form {
+    background-color: #fff !important;
+}
+
+.rmagic .rmcontent {
+  border-top: 0px !important;
+}
+
+.rmagic .rmrow {
+  width: 33.3333333333%;
+  min-height: 40px;
+  background-color: transparent !important;
+}
+
+
+.rmagic input[type=text], .rmagic select, .rmagic input[type=password], .rmagic input[type="email"], .rmagic input[type="url"], .rmagic input[type="number"] {
+    width: 100%;
+}
+
+.rmfield {
+    display: none !important;
+}
+
+.rminput {
+  width: 100% !important; 
+  }
+
+  .rmagic .buttonarea {
+    margin: 0px !important;
+    padding: 0px !important;
+    background-color: transparent !important;
+}
+
+.rmagic input[type=text], .rmagic select, .rmagic input[type=password], .rmagic input[type="email"], .rmagic input[type="url"], .rmagic input[type="number"] {
+  width: 100% !important;
+  }
+
+.rmagic .rmrow .rminput select {
+  background-color: #fff !important; }
+
+  .rmagic .buttonarea input[type='button'], .rmagic .buttonarea input[type='submit'] {
+    background: #3497d4;
+    color: #fff;
+}
+
+.rmagic .rm-two-columns-wrap {
+  margin-bottom: 0px !important;
+}
+
+.fm-bar {
+    position: fixed;
+    float: right;
+    width: 60px;
+    right: 10px;
+    top: 40%;
+    }
+
+.fm-bar img{
+    width: 60px;
+    }
+
+
+.content_homepage .booking_area .booking_form .nf-form-content {
+
+}
+
+.content_homepage .booking_area .booking_form .nf-form-content nf-fields-wrap{
+
+}
+
+.content_homepage .booking_area .booking_form .nf-form-content nf-fields-wrap nf-field{
+  width: 30%;
+  float: left;
+  margin-right: 3.3%;
+}
+
+.content_homepage .booking_area .booking_form .nf-form-content nf-fields-wrap nf-field .nf-error {
+  /*display: none;*/
+}
+
+.content_homepage .booking_area .booking_form .nf-form-content nf-fields-wrap nf-field .field-wrap .listselect-wrap > div, .field-wrap .pikaday__container, .field-wrap .pikaday__display, .field-wrap > div input, .field-wrap select, .field-wrap textarea {
+    border: 0px #1f3ff0b3 solid;
+    padding: 4px;
+}
+
+
+.content_homepage .booking_area .booking_form .field-wrap button, .field-wrap input[type="button"], .field-wrap input[type="submit"] {
+  padding: 5px 35%;
+  background: #7195ec;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 4px;
+  /*width: 100%;*/
+  margin-top: 20px;
+}
+
+/*.nf-form-cont {
+  width: 80%;
+}*/
+
+.lienhe_form_update {
+  
+}
+
+.camnang_dulich {
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.camnang_dulich .camnang_dulich_items {
+  overflow: hidden;
+  padding: 10px;
+  background: #fff;
+  box-shadow: 0 0 5px #999;
+  margin: 10px 0px;
+}
+
+.camnang_dulich .camnang_dulich_items .img_camnang_dulich_items {
+  width: 100%;
+  overflow: hidden;
+
+}
+
+.camnang_dulich .camnang_dulich_items .img_camnang_dulich_items img {
+  width: 100%;
+  max-height: 200px;
+}
+
+.camnang_dulich .camnang_dulich_items .info_camnang_dulich_items {
+  overflow: hidden;
+}
+
+.camnang_dulich .camnang_dulich_items .info_camnang_dulich_items h3{
+  font-size: 14px;
+  border-bottom: 1px #8eafdc dotted;
+  min-height: 40px;
+}
+
+.camnang_dulich .camnang_dulich_items .info_camnang_dulich_items p{
+  font-size: 12px;
+}
+
+.camnang_dulich .camnang_dulich_items .info_camnang_dulich_items p a{
+  display: none;
+}
+
+.camnang_dulich .camnang_dulich_items .info_camnang_dulich_items h6{
+  float: right;
+}
+
+
+.camnang_title {
+  color: #007cc3;
+  font-size: 22px;
+  font-family: sans-serif;
+  border-bottom: 1px #b394f7 dotted;
+  margin: 20px 0px 10px 0px;
+}
+
+.tieude_single_camnang {
+
+}
+
+.tieude_single_camnang h2 {
+  font-size: 18px;
+  font-family: sans-serif;
+}
+
+.tieude_single_camnang h3{
+  font-size: 16px;
+  font-family: sans-serif;
+}
+
+.content_single_camnang {
+  overflow: hidden;
+}
+
+.content_single_camnang img {
+  width: 80%;
+  text-align: center;
+  height: auto;
+}
